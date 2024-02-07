@@ -32,7 +32,7 @@ pipeline {
             echo 'This run when pipeline is faled'
         }
         success { 
-            echo 'This run when pipeline is Sucess!'
+            echo 'I will always say pipeline is Sucess!'
         }
     }
 
