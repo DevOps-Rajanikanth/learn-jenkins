@@ -23,10 +23,6 @@ pipeline {
                 echo 'Hello World'
             }
         }
-         stage('Example4') {
-            steps {
-                echo 'Hello World'
-            }
-        }
+    
     }
 }
