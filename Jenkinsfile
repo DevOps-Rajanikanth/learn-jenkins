@@ -1,21 +1,23 @@
-stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
+pipeline{
+    stages{
+        stage('Hi'){
+            steps{
+                echo "Hi"
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
+    }
+    stages{
+        stage('hellow'){
+            steps{
+               echo "Hello" 
             }
         }
-        stage('Deploy') {
-            steps {
-                sh """
-                    echo  "Here I wrote shell script"
-                    echo "$GREETING"
-                    #sleep 10
-                """
+    }
+    stages{
+        stage('good morning'){
+            steps{
+              echo "Good morning"  
             }
         }
- }
+    }
+}
