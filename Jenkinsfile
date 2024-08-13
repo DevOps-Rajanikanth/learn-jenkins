@@ -1,20 +1,21 @@
-Pipeline{
-    agent any
-    stages{
-        stage("Hi"){
-            steps{
-                echo "Hi worlod"
+stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
             }
         }
-        stage("hellow"){
-            steps{
-                echo "Helow "
+        stage('Test') {
+            steps {
+                echo 'Testing..'
             }
         }
-        stage("Good morning"){
-            steps{
-                echo "good morning worlod"
+        stage('Deploy') {
+            steps {
+                sh """
+                    echo  "Here I wrote shell script"
+                    echo "$GREETING"
+                    #sleep 10
+                """
             }
         }
-    }
-}
+ }
